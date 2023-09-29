@@ -34,7 +34,7 @@
   <ul>
     <li>Ruby</li>
     <li>Ruby On Rails</li>
-    <li>SQLite</li>
+    <li>Postgresql</li>
     <li>Bootstrap</li>
   </ul>
 
@@ -156,6 +156,6 @@ Definitely! We welcome any improvements or new ideas you may have. If your chang
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](./MIT) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

@@ -8,7 +8,7 @@ default: &default
 
 development:
   <<: *default
-  url: <%= ENV['DATABASE_URL'] %>
+  database: db/budget_app_development
 
 test:
   <<: *default

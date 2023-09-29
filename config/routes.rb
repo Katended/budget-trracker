@@ -7,5 +7,5 @@ Rails.application.routes.draw do
     end
   end
   # Defines the root path route ("/")
-  root "splash#index"
+  root "categories#index"
 end

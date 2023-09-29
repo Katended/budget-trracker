@@ -741,3 +741,7 @@ video {
 
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+
+.btn-cat {
+ border: 1px solid white;
+}
