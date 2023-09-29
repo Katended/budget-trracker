@@ -1,9 +1,9 @@
 <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: { class: 'flex flex-col' }) do |f| %>
-<div class="navigation">
-  <ul class="flex justify-between blue-btn items-center p-4">
+<div class="navigation flex blue-btn justify-between p-4">
+  <ul class="flex  ">
     <li class="w-10"><%= link_to image_tag('backarrow.png', alt: 'Back'), root_path, class: 'nav-link' %></li>
-    <h2>LOGIN</h2>
-  </ul>
+
+  </ul><h2>LOGIN</h2>
 </div>
 
   <div class="field border-t-2 mt-2 email-login">
