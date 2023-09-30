@@ -51,7 +51,7 @@
 
 ## 🚀 Live Demo <a name="built-with"></a>
 
-[Demo Link](https://www.loom.com/share/2d37c9b9b1c54791adc64ee6470b4237?sid=29c64926-e043-41f5-83d7-efb82b52e296)
+[Demo Link](https://www.loom.com/share/c3dcc2d054974090b7f43d96b8776643?sid=c6c0493f-f4e4-40d5-baaa-1935c64ed509)
 
 ## Deployment
 
