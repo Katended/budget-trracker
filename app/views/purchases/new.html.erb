@@ -1,0 +1,32 @@
+<div class="flex flex-col h-screen justify-between">
+<div class="navigation">
+  <ul class="flex justify-between p-4 blue-btn items-center">
+    <li class="w-10"><%= link_to image_tag('backarrow.png', alt: 'Back'), category_purchases_path, class: 'nav-link' %></li>
+    <li><h2>PURCHASE</h2></li>
+    <li><%= link_to 'Sign Out', destroy_user_session_path, data: { turbo_method: :delete }, class: 'nav-link' %></li>
+  </ul>
+</div>
+
+  <div class="form-class flex flex-col justify-center bottom-0">
+  <%= form_with(model: [@category, @purchase], url: category_purchases_path(@category), method: :post, id: 'purchase-form') do |form| %> 
+  <%= form.text_field :name, class: 'form-control', placeholder: 'Enter Name for Transaction' %>
+  <%= form.text_field :amount, class: 'form-control', placeholder: 'Enter Amount for Transaction' %>
+  <%= form.hidden_field :primary_category_id, value: @category.id %>
+  <div class="mb-4">
+    <%= select_tag "category", options_for_select(@categories.map { |category| [category.name, category.id] }), prompt: "Choose a category", class: "form-select" %>
+  </div>
+ 
+  
+  </div>
+ <div class="text-center mt-4">
+ <div class="w-full p-3 green-btn" >
+   
+      <div  style="border:1px solid #fff; width:100%">
+         <%= form.submit 'CREATE PURCHASE', class: 'p-2 py-4 m-4 text-lg ' %>
+      </div>
+  
+  </div>
+  </div>
+  <% end %>
+</div>
+

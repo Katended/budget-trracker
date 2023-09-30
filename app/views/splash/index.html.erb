@@ -1,0 +1,21 @@
+<div class="flex flex-col justify-between h-screen items-center">
+<p ></p>
+<h1>Budgeter</h1>
+ <% if user_signed_in? %>
+ <div class="w-full p-2 green-btn flex" > 
+  <div  style="border:1px solid #fff;width:100%"> <!-- Set width to full and remove padding and margin -->
+    <button class="p-2 py-4 m-4 w-full rounded" >
+      <%= link_to 'ADD A NEW CATEGORY', new_category_path %>
+    </button>
+  </div>
+   </div>
+<% else %>
+  <div class="flex flex-col w-full items-center">
+  <a href="/users/sign_in">
+    <button class="blue-btn w-full p-4" style="margin-bottom:1px;"><%= link_to 'Login', new_user_session_path %></button>
+  </a href="/users/sign_out">
+    <button class="blue-btn w-full p-4"><%= link_to 'Sign Up', new_user_registration_path %></button>
+  </div>
+<% end %>
+</div>
+
